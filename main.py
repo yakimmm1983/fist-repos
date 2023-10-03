@@ -33,3 +33,17 @@ getHealth()
 def delSecontElement(array:list):
     return array[::2]
 print(delSecontElement([1,2,3,4,5,6,7,8,9]))
+def fibonachi(n):
+    if n == -2 or n == -3:
+        return n
+    return fibonachi(n-2)+fibonachi(n-1)
+print(fibonachi(5))
+
+import math
+def Ploshad():
+    sektor = int(input("колличество секторов"))
+    circle = int(input("радиус круга"))
+
+    return math.pi*circle**2/sektor
+
+print(Ploshad())
