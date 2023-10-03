@@ -29,3 +29,7 @@ def getHealth():
             print("здоровье закончилось")
             break
 getHealth()
+
+def delSecontElement(array:list):
+    return array[::2]
+print(delSecontElement([1,2,3,4,5,6,7,8,9]))
